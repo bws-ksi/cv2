@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive CV using HTML</title>
+  <style>
+    body{
+      background: lightblue;
+      /**justify-content: center;
+      //align-items: center;**/
+    }
+      .container{
+      width: 900px;
+      background: #fff;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    .headbox, .footerbox{
+      height: auto;
+      background: darkblue;
+      height: 60px;
+      width: 100%;
+
+    }
+    .left-side{
+      padding: 0px;
+      height: 100%-20px;
+      position: relative;
+    }
+    .right-side{
+      padding: 0px;
+      /**position: relative;**/
+      
+
+    }
+    .content{
+      margin: 0 40px;
+      height: 1000px;
+      padding-top: 40px;
+    }
+    .name{
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+    .imgbox > img {
+      height: 200px;
+      width: 200px;
+      margin: 60px auto;
+      border: 1px solid black;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .name-item {
+      border-bottom: 1px solid black;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: bolder;
+      margin-top: 20px;
+    }
+    .info-item{
+      padding: 20px 0;
+    }
+    .two-colomns ul{
+      /**display: block;
+      //width: 100px;
+      //overflow: hidden;**/
+      /**второй вариант**/
+      list-style-position: inside;
+      column-count: 2;
+      /**list-style-type: decimal;
+      height: 200px;**/
+    }
+    .info-item ul li {
+      /**width: 50%;
+      //float: left;**/
+    }
+    .bold{
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-side">
+      <div class="headbox"></div>
+      <div class="content">
+        <div class="name">christoper morgan</div>
+        <div class="imgbox">
+          <img src="https://www.youloveit.ru/uploads/posts/2020-04/1586360515_youloveit_ru_dipper_gravity_falls_na_avu02.jpg" alt="Фото Диппера">
+        </div>
+        <div class="info">
+          <div class="contact">
+            <div class="name-item">Contact</div>
+            <div class="info-item"><span class="bold">Address:</span>
+              <div>177 Great Portland Street, London W5W 6PQ</div>
+            </div>
+            <div class="info-item"><span class="bold">Phone:</span>
+              <div>+44 (0)20 7666 8555</div> 
+            </div>
+            <div class="info-item"><span class="bold">Email:</span>            
+              <div>christoper.m@gmail.com</div>
+            </div>
+          </div>
+          <div class="lang-prof">
+            <div class="name-item">Languages</div>
+            <div class="info-item">
+              <span>Spanish - C2</span><br>
+              <span>Chinese - A1</span><br>
+              <span>German - A2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="content">
+        <div class="item">
+          <div class="name-item">Summary</div>
+          <div class="info-item"><span>Senior Web Developer Specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including HTML5, PHP OOP, JavaScript, CSS, MySQL. Strong background in project ,anage,ent and customer relations.</span></div>
+        </div>
+        <div class="item">
+          <div class="name-item">Skill Highlights</div>
+          <div class="info-item two-colomns">
+            <ul>
+              <li>Project management</li>
+              <li>Strong decision maker</li>
+              <li>Complex problem solver</li>
+              <li>Creative design</li>
+              <li>Innovative</li>
+              <li>Service-focused</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <div class="name-item">Experience</div>
+          <div class="info-item">
+            <span class="bold">Web Developer</span> - 09/2015 to 05/2019<br>
+            <span class="bold">Luna Web Design</span>, New York</br>
+            <ul>
+              <li>Cooperate with designers to create clean interfaces and simple, intuitive interactions and experiences.</li>
+              <li>Develop project concepts and maintain optimal workflow.</li>
+              <li>Work with senior developer to manage large, complex design projects for corporate clients.</li>
+              <li>Complete detailed programming and development tasks for front end public and internal websites as well as challenging back-end server code.</li>
+              <li>Carry out quality assurance tests to discover errors and optimize usability.</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="item">
+          <div class="name-item">Education</div>
+          <div class="info-item">Bachelor of Science: <span class="bold">Computer information Systems - 2014 Columbia University, NY</span></div>
+        </div>
+        <div class="item">
+          <div class="name-item">Certifications</div>
+          <div class="info-item">PHP Framework (certificate): <span class="bold">Zend, Codeighiter, Symfony.</span></div>
+          Programming Languages: <span  class="bold">JavaScript, HTML5, PHP OOP, CSS, SQL, MySQ.</span>
+        </div>
+      </div>
+      <div class="footerbox"></div>
+    </div>
+  </div>  
+</body>
+</html>
